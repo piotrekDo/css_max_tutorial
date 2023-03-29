@@ -41,3 +41,10 @@ Pozwalają zwiększyć priorytet zapisu a także dokładniej zaznaczać elementy
 - '~' działa podobnie, ale wszystkie paragrafy ZA nagłówkiem, w tym samym rodzicu. Paragraf ten nie musi być jednak bezpośrednio za nagłówkiem. np. H1 ~ p zaznaczy paragraf, nawet jeżeli bezpośrednnio pod H1 jest H2 a pod H2 jest paragraf. Wymaga jednak tego samego rodzica. 
 - '>' dziecko: div > p zaznaczy wszystkie paragrafy wewnątrz div. Jednak jeżeli wewnątrz div jest np. atyicle a w nim również paragraf, to ten paragraf zagnieżdżony w article nie zostanie zasnaczony.
 - ' ' div p zaznaczy wszystkich potomkow P w DIV. Podobnie jak w powyższym, ale również ten paragraf z article zostanie zaznaczony. 
+
+## Display
+Pozwala zmienić zachowanie z inline na block. Elementy inline zajmują tyle miejsca ile same potrzebują i można ustawić ich klika obok. Elementy blokowe zajmują całość szerokość. Display none **usuwa** element z html, ale pozostawia go w drzewie DOM. Taki element, nie zachowuje wysokośći. Istnieje również display hidden, które nie usuwa elementu z _document flow_ i zachowuje jego miejsce, w taki sposób, że inne elementy tego miejsca nie zajmą. 
+
+Inline-block: miks, gdzie elementy mogą być układane obok siebie i nie zajmują więcej szerokośći, zachowują się jednak jak blokc elemnet przy ustawianiu margin top/bottom czy padding. Elementy można stylować jak blokck element, ale zachowują się inline. Przydatne przy liście UL. 
+
+_Elementom inline nie można nadać marginesu górnego i dolnego, zostanie on zignorowany. Zastosowanie inline-block sprawia, że elementy te dalej układają się obok siebie, ale można im nadać margines górny i dolny. Co więcej jeżeli jednen z trzech elementów posiada margines górny, a pozostałe 2 nie posiadają, cała trójka zostanie odepchnięta_
