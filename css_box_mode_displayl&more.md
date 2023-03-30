@@ -32,3 +32,4 @@ Stosując width & height, wewnątrz modelu box, zastosowaliśmy je na na zawarto
     border-bottom: 5px solid white;
 }
  ```
+ 
