@@ -13,12 +13,15 @@ Trzeci sposób to osobny plik ze stylami. `<link rel="stylesheet" href="main.css
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     ```
 
-## Wprowadzenie do selektorów
+## Wprowadzenie do selektorów i klas
 - elementy: tagi html po których można się odwoływać do elementów.
 - klasy: współdzielone ustawienia, które można przypisać do wielu elementów poprzez '.'.
 - universal: oznaczaany '*' {}
 - id: pozwala zaznaczyć unkalny element poprzez '#'
 - atrybuty: np wszystki wyłączone przyciski, zaznaczene poprzez \[disabled\]
+
+Można zaznaczać elementy posiadające konkretną klasę np. `a.active` co oznacza anchor z klasą _active_.
+**Kolejność zapisanych klas w pliku .css ma znaczenie!**- zapisując do elementu więcej niż jedną klasę, w sytuacji gdy jedna z klas nadpisuje wartości innej decyduje kolejność- która z klas jest zapisana niżej. Nie ma znaczenia kolejność zapisu klas w tagu HTML. 
 
 ## Kaskadowanie 
 Czasami dwa różne zapisy dotyczą tego samego elemenu, jeden odnosi się do tagu, inny do klasy, którą ten tak posiada. Selektor klasy nadpisuje selektor tagu, ale nie kasuje go. Nadpisuje tylko wspólne cechy. 
@@ -48,3 +51,10 @@ Pozwala zmienić zachowanie z inline na block. Elementy inline zajmują tyle mie
 Inline-block: miks, gdzie elementy mogą być układane obok siebie i nie zajmują więcej szerokośći, zachowują się jednak jak blokc elemnet przy ustawianiu margin top/bottom czy padding. Elementy można stylować jak blokck element, ale zachowują się inline. Przydatne przy liście UL. 
 
 _Elementom inline nie można nadać marginesu górnego i dolnego, zostanie on zignorowany. Zastosowanie inline-block sprawia, że elementy te dalej układają się obok siebie, ale można im nadać margines górny i dolny. Co więcej jeżeli jednen z trzech elementów posiada margines górny, a pozostałe 2 nie posiadają, cała trójka zostanie odepchnięta_
+
+## !important
+Nadpisuje inne selektory. Na ogół nie powinno się go stosować. Dopisywane na końcu właściwości.
+`border: 1px solid red !important;`. Znajduje swoje zoastosowanie z JS, gdzie chcemy wymusić jakąś własność, najczęściej chwilowo. 
+
+## peseudoklasa :not
+`a:not(.active)` zaznaczy każdy anchor nieposiadający klasy _active_. Nie dodajemuy spacji pomiędzy ':'
