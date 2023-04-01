@@ -1,136 +1,131 @@
+
+
 #product-overview {
-  background: url("freedom.jpg");
-  width: 100%;
-  height: 528px;
-  padding: 10px;
+    background: url("images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box;
+    /* background-image: url("freedom.jpg");
+    background-size: cover;
+    background-position: left 10% bottom 20%; */
+    /* background-repeat: no-repeat;
+    background-origin: border-box;
+    background-clip: border-box; */
+    width: 100%;
+    height: 528px;
+    padding: 10px;
+    margin-top: 43px;
+    /* border: 5px dashed red; */
+    position: relative;   
 }
 
 .section-title {
-  color: #2ddf5c;
-  text-align: center;
+    color: #2ddf5c;
+    text-align: center;
 }
 
 #product-overview h1 {
-  color: white;
-  font-family: "Anton", sans-serif;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+}
+
+.plan__list {
+    width: 80%;
+    margin: auto;
+    text-align: center;
 }
 
 .plan {
-  border-radius: 20px 5px;
-  background-color: #d5ffdc;
-  text-align: center;
-  padding: 16px;
-  margin: 8px;
-  display: inline-block;
-  width: 30%;
-  vertical-align: middle;
+    background: #d5ffdc;
+    text-align: center;
+    padding: 16px;
+    margin: 8px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
 }
 
-.plan--highlited {
-  background: #19b84c;
-  color: white;
-  box-shadow: 3px 8px 20px 10px rgba(0, 0, 0, 0.4);
+.plan--highlighted {
+    background: #19b84c;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .plan__annotation {
-  color: #19b84c;
-  background-color: white;
-  padding: 6px;
-  margin: 10px 30px;
-  border-radius: 40px;
+    background: white;
+    color: #19b84c;
+    padding: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
 }
 
-article h1 {
-  color: #0e4f1f;
+.plan__title {
+    color: #0e4f1f;
 }
 
-.plan--highlited h1:last-of-type {
-  color: white;
+.plan__price {
+    color: #858585;
 }
 
-article h2 {
-  color: #858585;
+.plan--highlighted .plan__title {
+    color: white;
 }
 
-.plan--highlited h2 {
-  color: #0e4f1f;
+.plan--highlighted .plan__price {
+    color: #0e4f1f;
 }
 
-article ul {
-  list-style: none;
-  padding: 0;
-  font-weight: bold;
-  margin: 30px 0;
+.plan__features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-article li {
-  margin-bottom: 8px;
+.plan__feature {
+    margin: 8px 0;
 }
 
-.button {
-  background-color: #0e4f1f;
-  color: white;
-  font: inherit;
-  border: 1.5px solid #0e4f1f;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
+#key-features {
+    background: #ff1b68;
+    margin-top: 80px;
+    padding: 16px;
 }
 
-.button:hover,
-.button:active {
-  color: #0e4f1f;
-  background: white;
+#key-features .section-title {
+    color: white;
+    margin: 32px;
+}
+
+.key-feature__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.key-feature {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.key-feature__image {
+    background: #ffcede;
+    width: 128px;
+    height: 128px;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.key-feature__description {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
 }
 
 /* h1 {
     font-family: sans-serif;
 } */
-
-
-
-.reasons {
-  margin-top: 50px;
-  background-color: #ff1b68;
-  padding: 30px;
-}
-
-.reasons h1 {
-  color: white;
-  text-align: center;
-}
-
-.reasons p {
-  margin: 20px 0;
-  color: white;
-  font-size: 1.3rem;
-  text-align: center;
-}
-
-.reasons ul,
-li {
-  margin: 0;
-  display: inline-block;
-}
-
-.reasons ul {
-  list-style: none;
-  padding: 0;
-  width: 100%;
-  text-align: center;
-}
-
-.reasons li {
-  width: 33%;
-  vertical-align: top;
-}
-.reasons li div {
-  width: 128px;
-  height: 128px;
-  background-color: #ffcdde;
-  border-radius: 50%;
-  border: 2px solid black;
-  margin: 0 auto;
-}
 
