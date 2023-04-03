@@ -42,3 +42,15 @@ background: radial-gradient(ellipse at top, #e66465, transparent),
 ```
 
 Każdy kolejny argument rozdzielamy przecinkami. 
+
+## Stosowanie wielu backgroundó'w jednocześnie
+Można zastosować wiele `backgroun-image` i jedno `background-color` przy czym gradienty są uznawane za image. Wówczas ważne jest zapewnienie transparentności na poszczególnych _warstwach_. Całość można zapisać w ramach jednego `background`:
+```
+  background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+    url("images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box,
+    #ff1b68;
+```
+jednocześnie zastosowany jest gradient, obraz oraz kolor 
+
+## Filtry
+Pozwalają zmienić wygląd tła np poprzez rozmycie, cień, odcienie szarości itp.
