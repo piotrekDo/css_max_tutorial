@@ -6,3 +6,4 @@ Dodawane za pomocą
 pozwala wycentrwac element, ale jedynie blokowy z wyraznie nadana szerokoscia(?)
 inne:
 `text-align: center;`
+`vertical-align: middle;`
