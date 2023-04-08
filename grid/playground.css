@@ -1,0 +1,90 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 4px;
+  max-height: 600px;
+  width: 1100px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 6 / 4;
+  background-color: antiquewhite;
+}
+.div2 {
+  grid-area: 5 / 4 / 13 / 7;
+  background-color: aqua;
+  height: 250px;
+  justify-self: center;
+}
+.div3 {
+  grid-area: 1 / 7 / 13 / 10;
+  background-color: aquamarine;
+}
+.div4 {
+  grid-area: 1 / 4 / 5 / 7;
+  transition: all 1s;
+}
+
+.div4:hover {
+  transform: scale(1.2, 1.2) rotateY(180deg);
+  transition: all 1s;
+}
+
+.div4 img {
+  
+}
+.div5 {
+  grid-area: 8 / 10 / 13 / 13;
+}
+
+.scene {
+  width: 200px;
+  height: 260px;
+  perspective: 600px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card__face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  background: red;
+}
+
+.card__face--back {
+  background: blue;
+  transform: rotateY(180deg);
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card {
+  transform-origin: center right;
+}
+
+.card.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.big {
+    top: 10px;
+    height: 500px;
+    width: 500px;
+}
