@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+}
+
+html {
+  background: #b3b3b3;
+  padding: 5px;
+}
+
+body {
+  background: #b3b3b3;
+  padding: 5px;
+  margin: 0;
+}
+
+.scroller {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.scroller section {
+  scroll-snap-align: start;
+}
+
+h1 {
+  text-align: center;
+}
+
+.navbar-open-btn {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 90px;
+  height: 50px;
+  background-color: aqua;
+  transition: left 1s;
+}
+
+.navbar-open-btn__open {
+  left: 20rem;
+  transition: left 1s;
+}
+
+.menu {
+  background-color: aqua;
+  position: fixed;
+  top: 0;
+  left: -20rem;
+  width: 20rem;
+  height: 100vh;
+
+  transition: all 1s;
+}
+
+.menu__open {
+  left: 0;
+  transition: all 1s;
+}
+
+.flex-intro {
+  height: 100vh;
+  margin-top: 20px;
+  padding: 30px 0px;
+}
+
+.flex-intro h2 {
+}
+
+.flex-container {
+  background: white;
+  padding: 10px;
+  border: 5px solid black;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+.item-1 {
+  background: #ff7300;
+  color: white;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
+}
+
+.item-2 {
+  background: #ff9640;
+  color: white;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
+  width: 250px;
+  font-size: 1.8rem;
+}
+
+.item-3 {
+  background: #ff9640;
+  color: white;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
+  height: 250px;
+}
+
+.item-4 {
+  background: #f5c096;
+  color: white;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+.item-5 {
+  background: #d3c0b1;
+  color: white;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
+  width: 350px;
+}
+
+.item-6 {
+  background: #d3c0b1;
+  color: white;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
+  width: 350px;
+}

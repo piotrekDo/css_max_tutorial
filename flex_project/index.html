@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="app.js" defer></script>
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <div class="navbar-open-btn">Menu</div>
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="index.html">Flex Display & Flrex Wrap</a>
+        </li>
+        <li>
+          <a href="flex_axis.html">Flex Axis</a>
+        </li>
+      </ul>
+    </div>
+    <h1>Flex Display & Flex Wrap</h1>
+    <div class="scroller">
+      <section class="flex-intro">
+        <h2>Standard Flex</h2>
+        <div class="flex-container">
+          <div class="item-1">div</div>
+          <div class="item-2">w=250px</div>
+          <div class="item-3">h=250px</div>
+          <div class="item-4">w/h=300px</div>
+          <div class="item-5">w=350px</div>
+          <div class="item-6">w=350px</div>
+        </div>
+      </section>
+      <section class="flex-intro">
+        <h2>Flex Wrap</h2>
+        <p>
+          wrap powoduje, że elementy będą zachowywały swoją minimalną szerokość i będą przechodziły
+          do nowego wiersza. Na zbyt małym ekarnie zachodzi overflow- elementy będą wychodziły poza
+          ekran
+        </p>
+        <div class="flex-container flex-wrap">
+          <div class="item-1">div</div>
+          <div class="item-2">w=250px</div>
+          <div class="item-3">h=250px</div>
+          <div class="item-4">w/h=300px</div>
+          <div class="item-5">w=350px</div>
+          <div class="item-6">w=350px</div>
+        </div>
+      </section>
+      <section class="flex-intro">
+        <h2>Flex wrap: wrap-reverse</h2>
+        <p>
+          wrap-reverse odwraca elementy, ostani jest pierwszy a także przyjmując całą wysokość
+          rodzica vel najwyższego elementu 'rosną' od dólu, pozostawiając miejsce u góry.
+        </p>
+        <div class="flex-container flex-reverse">
+          <div class="item-1">div</div>
+          <div class="item-2">w=250px</div>
+          <div class="item-3">h=250px</div>
+          <div class="item-4">w/h=300px</div>
+          <div class="item-5">w=350px</div>
+          <div class="item-6">w=350px</div>
+        </div>
+      </section>
+      <section class="flex-intro">
+        <h2>Flex column</h2>
+        <p>
+          flex-direction: column elementy zajmują całą szerokość jak blokowe, z wyjątkiem tych,
+          które mają ustaloną szerokość.
+        </p>
+        <div class="flex-container flex-column">
+          <div class="item-1">div</div>
+          <div class="item-2">w=250px</div>
+          <div class="item-3">h=250px</div>
+          <div class="item-4">w/h=300px</div>
+          <div class="item-5">w=350px</div>
+          <div class="item-6">w=350px</div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
